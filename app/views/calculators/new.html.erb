@@ -9,3 +9,7 @@
     <%= submit_tag 'Calculate' %>
   </div>
 <% end %>
+
+<% if @result.present? %>
+  <h2>Result: <%= @result %></h2>
+<% end %>
