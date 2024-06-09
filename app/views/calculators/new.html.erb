@@ -1,0 +1,11 @@
+<h1>Calculator</h1>
+
+<%= form_with url: calculate_path, method: :post, local: true do %>
+  <div>
+    <%= label_tag :numbers, 'Enter numbers:' %>
+    <%= text_area_tag :numbers %>
+  </div>
+  <div>
+    <%= submit_tag 'Calculate' %>
+  </div>
+<% end %>
